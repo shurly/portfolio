@@ -14,6 +14,10 @@
     --font-action: "Muli", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .hamburguer {
     /*background-color: red;*/
     width: 2rem;
@@ -180,6 +184,7 @@ header {
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 150;
 }
 
 .show-menu .sidebar {
@@ -480,9 +485,6 @@ header {
     transition: all 0.3s;
 }
 
-.field:focus ~ label{
-  
-}
 
 .field:focus{
     border-bottom: 1px solid;
@@ -558,4 +560,53 @@ header {
     padding: 1rem;
     cursor: pointer;
     grid-column: 2;
+}
+
+footer{
+    width: 100%;
+    height: 7rem;
+    background-color: #020202;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p{
+    font-family: var(--font-secundary);
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.social-list a{
+    margin: 0 2rem;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.social-list ul{
+    display: flex;
+}
+
+#link-topo{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: #ff0;
+    background: #fffc00; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #fffc00); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #fffc00);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    border-radius: .3rem;
+    box-shadow: 0 0.1rem 0.6rem #000;
 }
