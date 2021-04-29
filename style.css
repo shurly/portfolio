@@ -30,10 +30,12 @@ html{
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
+    z-index: 250;
 }
 
 .show-menu .hamburguer {
     right: 16rem;
+    z-index: 250;
 }
 
 .line {
@@ -69,10 +71,14 @@ html{
     color: #000;
     font-family: var(--font-action);
     opacity: 0;
+    z-index: 250;
+   
 }
 
 .show-menu .hamburguer:hover span {
     opacity: 1;
+    z-index: 250;
+
 }
 
 .hamburguer span::before {
@@ -83,7 +89,10 @@ html{
     border-left: 0.5rem solid transparent;
     border-bottom: 0.5rem solid transparent;
     left: -1rem;
+    z-index: 250;
+    
 }
+
 
 header {
     width: 100%;
@@ -189,6 +198,7 @@ header {
 
 .show-menu .sidebar {
     right: 0;
+    
 }
 
 .menu {
@@ -581,6 +591,7 @@ footer{
     font-family: var(--font-secundary);
     color: #fff;
     font-size: 1.2rem;
+    align-items: center;
 }
 
 .social-list a{
@@ -610,3 +621,5 @@ footer{
     border-radius: .3rem;
     box-shadow: 0 0.1rem 0.6rem #000;
 }
+
+
